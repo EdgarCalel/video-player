@@ -1,0 +1,132 @@
+body {
+    background: url(../imagenes/fondo4.gif);
+    background-color: #cccccc; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.button{
+inline-size: 62px;
+block-size: 62px;
+border: none;
+background-color: transparent;
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+width: 250px
+}
+.button:active{
+    transform: scale(.9);
+}
+#play{
+background-image: url(../imagenes/play_good.svg)
+}
+#pause{
+background-image: url(../imagenes/pause.svg)
+}
+#backward{
+    background-image: url(../imagenes/fast-backward.svg)
+}
+#forward{
+background-image: url(../imagenes/fast-forward.svg)
+}
+.wrapper{
+
+  max-inline-size: 900px;  
+  margin: auto;
+}
+.player{
+    margin-block-start: 100px;
+    position: relative;
+}
+.player video{
+inline-size: 100%;
+aspect-ratio:16/9;
+vertical-align: middle;
+object-fit:cover;
+}
+.player-title{
+color: white;
+position: absolute;
+inset-block-start: 0;
+inset-inline-start: 80px;
+text-shadow:  0 0 10px rgb(40, 44, 0);
+font-family: 'ZCOOL KuaiLe', cursive;
+}
+.player-title2{
+color: white;
+position: absolute;
+inset-block-start: 0;
+inset-inline-end: 80px;
+text-shadow:  0 0 10px rgb(40, 44, 0);
+font-family: 'Yomogi', cursive;
+}
+.animacion{
+    color: white;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+    inset-block-start: 10px;
+width: 50px;
+}
+.player-actions{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+   
+    /* z-index: 2; */
+
+}
+
+.player-progress{
+position: absolute;
+inset-block-end: 0;
+inset-inline: 0;
+display: flex;
+padding: 10px;
+
+}
+.player-progress input {
+    flex: 1;
+}
+#progress{
+    -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 15px;
+  background: rgb(225, 236, 123);
+  
+} 
+.player-overlay{
+position: absolute;
+inset: 0;
+opacity: 0;
+transition:.3s opacity;
+
+}
+.player:hover .player-overlay{
+
+opacity: 1;
+}
+#video{
+    box-shadow: 0 0 20px rgb(155, 155, 133);
+}
+
+  .button .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(67, 236, 109);
+    color: rgb(19, 29, 2);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .button:hover .tooltiptext {
+    visibility: visible;
+  }
