@@ -60,6 +60,16 @@ inset-inline-end: 80px;
 text-shadow:  0 0 10px rgb(40, 44, 0);
 font-family: 'Yomogi', cursive;
 }
+.player-title3{
+color: white;
+position: absolute;
+inset-block-end: 20px;
+padding-top: 25px;
+inset-inline-end: 80px;
+text-shadow:  0 0 10px rgb(40, 44, 0);
+font-family: 'Yomogi', cursive;
+
+}
 .animacion{
     color: white;
     position: absolute;
